@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/custom_ripple"
+    android:layout_width="wrap_content"
+    android:gravity="center_horizontal"
+    android:layout_height="wrap_content"
+    android:id="@+id/relativeLayout"
+    android:padding="13dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="250dp"
+        app:cardCornerRadius="6dp"
+        android:layout_centerHorizontal="true"
+        app:cardElevation="5dp"
+        android:id="@+id/cardView"
+        android:layout_height="110dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/videoThumbnail"
+            android:src="@drawable/ic_fullscreen_black_24dp">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/videoDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:text="00:00:00"
+            android:textColor="#FFF"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="3dp"
+            android:textSize="12dp"
+            android:layout_gravity="right|bottom"
+
+            ></TextView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/videoName"
+        android:layout_centerHorizontal="true"
+        android:text="VLC-23HFK7X"
+        android:textSize="17dp"
+        android:textColor="@color/textColor"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/moreOptions"
+        android:layout_below="@+id/cardView"
+        android:layout_marginTop="10dp"></TextView>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/moreOptions"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/cardView"
+        android:src="@drawable/ic_more_vert_black_24dp"
+        android:layout_alignParentRight="true"></ImageView>
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:id="@+id/save"
+        android:layout_marginTop="10dp"
+        android:text="Save"
+        android:background="@color/colorGreen"
+        android:textColor="#fff"
+        android:visibility="gone"
+        android:layout_below="@id/cardView"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_cloud_download_black_24dp"></Button>
+
+
+</RelativeLayout>

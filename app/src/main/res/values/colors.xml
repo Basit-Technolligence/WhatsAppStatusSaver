@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#25D366</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#fff</color>
+    <color name="colorBackground">#fff</color>
+    <color name="textColor">#212121</color>
+    <color name="progress_transparent">#6377a6</color>
+    <color name="colorRipple">#f0f0f0</color>
+    <color name="colorGreen">#25D366</color>
+</resources>
